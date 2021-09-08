@@ -196,7 +196,17 @@ ore = {
 			end
 		else
 			local rand = math.random(1, 100)
-			if rand <= 5 then
+			if rand == 1 then
+				return "ore_very_high"
+			elseif rand == 2 then
+				return "quartz"
+			elseif rand == 3 then
+				return "silver_ore"
+			elseif rand == 4 then
+				return "gold_ore"
+			elseif rand <= 20 then
+				return "ore_high"
+			elseif rand <= 75 then
 				return "ore_med"
 			else
 				return "ore_poor"
